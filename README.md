@@ -15,7 +15,8 @@ curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/m
 
 ## 3. Create a validator wallet and validator
 
-## 4. Optionally setup a pm2 services to run Lachesis 
+## 4. Optionally setup a pm2 services to run Lachesis
+### This is not recommended.
 - from your AWS ec2 node as your new non-root user run:
 - be sure to give your account password in place of &lt;password> and your wallet address in place of &lt;walletaddress>
 ```
