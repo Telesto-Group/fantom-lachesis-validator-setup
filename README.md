@@ -26,3 +26,4 @@ curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/m
 
 ## Notes
 [Run commands in the background](https://www.computerhope.com/unix/unohup.htm)
+[pm2 info](https://pm2.keymetrics.io/docs/usage/quick-start/)
