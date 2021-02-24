@@ -22,3 +22,7 @@ curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/m
 ```
 curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/master/pm2Setup.sh | bash -s <password> <walletaddress>
 ```
+
+
+## Notes
+[Run commands in the background](https://www.computerhope.com/unix/unohup.htm)
