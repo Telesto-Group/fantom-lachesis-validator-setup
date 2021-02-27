@@ -7,7 +7,7 @@ GOROOT=/usr/local/go
 GOPATH=$HOME/go
 LACHESISPATH=$GOPATH/src/github.com/Fantom-foundation
 PATHS=$GOPATH/go/bin:$GOROOT/bin:$LACHESISPATH/build
-
+mkdir -p $LACHESISPATH
 cp -a $GOPATH/Fantom-foundations/go-lachesis $LACHESISPATH
 
 ZSHRC=$HOME/.zshrc
