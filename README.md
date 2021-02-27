@@ -15,3 +15,5 @@ curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/m
 ## Notes
 [Run commands in the background](https://www.computerhope.com/unix/unohup.htm)
 
+[Lachesis 0.7.0-rc.1 Info](https://github.com/Fantom-foundation/go-lachesis/tree/v0.7.0-rc.1)
+
