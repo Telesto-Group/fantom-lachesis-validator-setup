@@ -4,18 +4,24 @@
 # taken and modified from: https://docs.fantom.foundation/staking/how-to-run-a-validator-node
 
 # ./validatorSetup.sh <username>
+# ./validatorSetup.sh <username> <lachesis version>
 # ./validatorSetup.sh myLachesisUser
+# ./validatorSetup.sh myLachesisUser 0.7.0-rc.1
 
-if [ $# -ne 1 ]; 
-    then echo "Please pass in a username to create"
+if [ $# -ne 1 ]; then
+    echo "Please pass in a username to create"
     exit
+fi
+
+if [ $# -eq $2 ]; then
+    LACHESIS_VERSION=$2
+else
+    LACHESIS_VERSION='0.7.0-rc.1'
 fi
 
 USER=$1
 
 GO_VERSION='go1.13.3'
-LACHESIS_VERSION='0.7.0-rc.1'
-
 
 # Install required packages
 sudo apt-get update
@@ -46,7 +52,6 @@ sudo usermod --shell /bin/zsh $USER
 sudo git clone https://github.com/robbyrussell/oh-my-zsh.git /home/$USER/.oh-my-zsh
 sudo cp /home/$USER/.oh-my-zsh/templates/zshrc.zsh-template /home/$USER/.zshrc
 
-
 # Define Paths
 GOROOT=/usr/local/go
 GOPATH=/home/$USER/go
@@ -75,7 +80,6 @@ echo "export LACHESISURL=$LACHESISURL" | sudo tee -a $ZSHRC
 echo "export LACHESIS_VERSION=$LACHESIS_VERSION" | sudo tee -a $ZSHRC
 echo "export LACHESIS_BRANCH=$LACHESIS_BRANCH" | sudo tee -a $ZSHRC
 echo "export PATH=$PATH:$PATHS" | sudo tee -a $ZSHRC
-
 
 # Switch to new user to continue setup
 sudo su - $USER --shell /bin/bash <<- 'EOT'
