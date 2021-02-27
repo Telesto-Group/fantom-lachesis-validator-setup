@@ -111,7 +111,7 @@ sudo su - $USER --shell /bin/bash <<- 'EOT'
       git checkout tags/v$LACHESIS_VERSION
       make build
       cd build
-      wget https://raw.githubusercontent.com/Fantom-foundation/lachesis_launch/master/releases/$LACHESIS_VERSION/mainnet.toml
+      wget https://raw.githubusercontent.com/Fantom-foundation/lachesis_launch/master/releases/v$LACHESIS_VERSION/mainnet.toml
       cd ~
     fi
     # Validate lachesis version before moving on
