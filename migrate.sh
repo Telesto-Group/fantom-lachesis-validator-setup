@@ -3,5 +3,4 @@ mkdir -p $NEWLACHESISPATH
 cp -a $LACHESISPATH $NEWLACHESISPATH
 rm -rf $GOPATH/Fantom-foundations
 
-sed -i "s,$LACHESISPATH,$NEWLACHESISPATH," $HOME/.zshrc
-
+sed -i "s,$LACHESISPATH,$NEWLACHESISPATH/go-lachesis," $HOME/.zshrc
