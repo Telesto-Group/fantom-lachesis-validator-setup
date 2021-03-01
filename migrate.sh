@@ -1,14 +1,7 @@
-#!/bin/bash
-
-GOROOT=/usr/local/go
-GOPATH=$HOME/go
-LACHESISPATH=$GOPATH/src/github.com/Fantom-foundation
-PATHS=$GOPATH/go/bin:$GOROOT/bin:$LACHESISPATH/build
-mkdir -p $LACHESISPATH
-cp -a $GOPATH/Fantom-foundations/go-lachesis $LACHESISPATH
+NEWLACHESISPATH=$GOPATH/src/github.com/Fantom-foundation
+mkdir -p $NEWLACHESISPATH
+cp -a $LACHESISPATH $NEWLACHESISPATH
 rm -rf $GOPATH/Fantom-foundations
 
-ZSHRC=$HOME/.zshrc
+sed -i "s,$LACHESISPATH,$NEWLACHESISPATH," $HOME/.zshrc
 
-echo "export LACHESISPATH=$LACHESISPATH" | sudo tee -a $ZSHRC
-echo "export PATH=$PATH:$PATHS" | sudo tee -a $ZSHRC
