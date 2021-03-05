@@ -18,5 +18,8 @@ curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/m
 [Lachesis 0.7.0-rc.1 Info](https://github.com/Fantom-foundation/go-lachesis/tree/v0.7.0-rc.1)
 
 ## migrate paths
+```
+curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/master/migrate.sh | zsh
+source .zshrc
+```
 
-curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/master/migrate.sh | bash -s
