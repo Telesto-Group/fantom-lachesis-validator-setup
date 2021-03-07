@@ -25,7 +25,7 @@ sed -i "s,$HOME/go/Fantom-foundations/go-lachesis/,$LACHESISPATH/," $HOME/.bash_
 # Validate lachesis version before moving on
 INSTALLED_LACHESIS=$(lachesis version)
 echo $INSTALLED_LACHESIS
-if [[ ! -z "$INSTALLED_LACHESIS" && "$INSTALLED_LACHESIS" =~ .*"$LACHESIS_VERSION".* ]]
+if [[ ! -z "$INSTALLED_LACHESIS" && "$INSTALLED_LACHESIS" =~ .*"$NEW_LACHESIS_VERSION".* ]]
 then
   echo "lachesis updated to $NEW_LACHESIS_VERSION.  Go ahead and start your node"
 else
