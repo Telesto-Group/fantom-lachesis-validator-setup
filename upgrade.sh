@@ -27,7 +27,7 @@ INSTALLED_LACHESIS=$(lachesis version)
 echo $INSTALLED_LACHESIS
 if [[ ! -z "$INSTALLED_LACHESIS" && "$INSTALLED_LACHESIS" =~ .*"$LACHESIS_VERSION".* ]]
 then
-  echo "lachesis updated to $LACHESIS_VERSION.  Go ahead and start your node"
+  echo "lachesis updated to $NEW_LACHESIS_VERSION.  Go ahead and start your node"
 else
   echo "lachesis did not update correctly for some reason. You're in trouble."
 fi
