@@ -21,6 +21,9 @@ fi
 
 USER=$1
 
+echo $USER
+echo $LACHESIS_VERSION
+
 GO_VERSION='go1.13.3'
 
 # Install required packages
@@ -33,6 +36,7 @@ if id "$USER" &>/dev/null; then
   echo "$USER user already exists"
   sudo rm -rf /home/$USER
 else
+  echo "creating user: $USER"
   sudo useradd -m $USER
 fi
 
