@@ -92,7 +92,7 @@ sudo su - $USER --shell /bin/bash <<- 'EOT'
     GO_FILE=$GO_VERSION.linux-amd64.tar.gz
     wget https://dl.google.com/go/$GO_FILE
     sudo rm -rf $GOROOT
-    sudo tar -xvf $GO_FILE -C /usr/local
+    sudo tar -xf $GO_FILE -C /usr/local
   fi
   # Validate go version before moving on
   INSTALLED_GO=$(go version)
