@@ -60,7 +60,7 @@ sudo cp /home/$USER/.oh-my-zsh/templates/zshrc.zsh-template /home/$USER/.zshrc
 # Define Paths
 GOROOT=/usr/local/go
 GOPATH=/home/$USER/go
-LACHESISPATH=$GOPATH/src/github.com/Fantom-foundation
+LACHESISPATH=$GOPATH/src/github.com/Fantom-foundation/go-lachesis
 LACHESISURL=https://github.com/Fantom-foundation/go-lachesis.git
 PATHS=$GOPATH/go/bin:$GOROOT/bin:$LACHESISPATH/build
 ZSHRC=/home/$USER/.zshrc
