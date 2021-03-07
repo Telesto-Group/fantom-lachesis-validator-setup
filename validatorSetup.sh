@@ -21,9 +21,6 @@ fi
 
 USER=$1
 
-echo $USER
-echo $LACHESIS_VERSION
-
 GO_VERSION='go1.13.3'
 
 # Install required packages
