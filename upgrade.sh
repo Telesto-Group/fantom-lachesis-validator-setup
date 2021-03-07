@@ -19,6 +19,9 @@ else
   cd ~
 fi
 sed -i "s,$LACHESIS_VERSION,$NEW_LACHESIS_VERSION," $HOME/.zshrc
+sed -i "s,$LACHESIS_VERSION,$NEW_LACHESIS_VERSION," $HOME/.bash_profile
+sed -i "s,$HOME/go/Fantom-foundations/go-lachesis/,$LACHESISPATH," $HOME/.bash_profile
+
 # Validate lachesis version before moving on
 INSTALLED_LACHESIS=$(lachesis version)
 echo $INSTALLED_LACHESIS
