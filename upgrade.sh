@@ -13,7 +13,7 @@ then
 else
   echo "Updating lachesis from $INSTALLED_LACHESIS to $LACHESIS_VERSION"
   # Install Lachesis
-  cd $LACHESISPATH
+  cd $LACHESISPATH/go-lachesis
   git checkout tags/v$LACHESIS_VERSION
   make build
   cd ~
