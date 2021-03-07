@@ -8,8 +8,8 @@
 # ./validatorSetup.sh myLachesisUser
 # ./validatorSetup.sh myLachesisUser 0.7.0-rc.1
 
-if [ $# -ne 1 ]; then
-    echo "Please pass in a username to create"
+if [ $# -lt 1 ]; then
+    echo "Please pass in at least a username to create"
     exit
 fi
 
