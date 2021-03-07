@@ -49,7 +49,11 @@ sudo usermod -aG sudo $USER
 sudo chown -R $USER:$USER /home/$USER/
 sudo chmod 700 /home/$USER/.ssh
 sudo chmod 644 /home/$USER/.ssh/authorized_keys
-echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/dont-prompt-$USER-for-password
+
+FILE=/etc/sudoers.d/dont-prompt-$USER-for-password
+if ! test -f "$FILE"; then
+  echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee $FILE
+fi
 
 # Setup zsh for interaction later
 sudo usermod --shell /bin/zsh $USER
