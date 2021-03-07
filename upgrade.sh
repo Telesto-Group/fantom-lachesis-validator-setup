@@ -14,7 +14,7 @@ else
   echo "Updating lachesis from $LACHESIS_VERSION to $NEW_LACHESIS_VERSION"
   # Install Lachesis
   cd $LACHESISPATH
-  git checkout tags/v$LACHESIS_VERSION
+  git checkout tags/v$NEW_LACHESIS_VERSION
   make build
   cd ~
 fi
