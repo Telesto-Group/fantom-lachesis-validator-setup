@@ -27,5 +27,5 @@ source .zshrc
  - from your AWS ec2 node, as the non root user, run:
  - be sure to give a [valid version](https://github.com/Fantom-foundation/go-lachesis/releases) of lachesis in place of &lt;version>
 ```
-curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/master/upgrade.sh | bash -s <version>
+curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/master/upgrade.sh | zsh -s <version>
 ```
