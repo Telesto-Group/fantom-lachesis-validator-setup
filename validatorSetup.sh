@@ -73,7 +73,6 @@ echo "export GO_VERSION=$GO_VERSION" | sudo tee -a $BASHPROFILE
 echo "export LACHESISPATH=$LACHESISPATH" | sudo tee -a $BASHPROFILE
 echo "export LACHESISURL=$LACHESISURL" | sudo tee -a $BASHPROFILE
 echo "export LACHESIS_VERSION=$LACHESIS_VERSION" | sudo tee -a $BASHPROFILE
-echo "export LACHESIS_BRANCH=$LACHESIS_BRANCH" | sudo tee -a $BASHPROFILE
 echo "export PATH=$PATH:$PATHS" | sudo tee -a $BASHPROFILE
 
 # Setup zsh environment for user
@@ -83,7 +82,6 @@ echo "export GO_VERSION=$GO_VERSION" | sudo tee -a $ZSHRC
 echo "export LACHESISPATH=$LACHESISPATH" | sudo tee -a $ZSHRC
 echo "export LACHESISURL=$LACHESISURL" | sudo tee -a $ZSHRC
 echo "export LACHESIS_VERSION=$LACHESIS_VERSION" | sudo tee -a $ZSHRC
-echo "export LACHESIS_BRANCH=$LACHESIS_BRANCH" | sudo tee -a $ZSHRC
 echo "export PATH=$PATH:$PATHS" | sudo tee -a $ZSHRC
 
 # Switch to new user to continue setup
