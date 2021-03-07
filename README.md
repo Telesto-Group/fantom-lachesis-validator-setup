@@ -28,4 +28,5 @@ source .zshrc
  - be sure to give a [valid version](https://github.com/Fantom-foundation/go-lachesis/releases) of lachesis in place of &lt;version>
 ```
 curl https://raw.githubusercontent.com/mhetzel/fantom-lachesis-validator-setup/master/upgrade.sh | zsh -s <version>
+source .zshrc
 ```
