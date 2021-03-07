@@ -18,6 +18,7 @@ else
   make build
   cd ~
 fi
+sed -i "s,$INSTALLED_LACHESIS,$LACHESIS_VERSION," $HOME/.zshrc
 # Validate lachesis version before moving on
 INSTALLED_LACHESIS=$(lachesis version)
 echo $INSTALLED_LACHESIS
