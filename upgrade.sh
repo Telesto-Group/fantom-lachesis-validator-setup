@@ -10,6 +10,7 @@ INSTALLED_LACHESIS=$(lachesis version)
 if [[ ! -z "$INSTALLED_LACHESIS" && "$INSTALLED_LACHESIS" =~ .*"$NEW_LACHESIS_VERSION".* ]]
 then
   echo "lachesis is already running desired version"
+  exit
 else
   echo "Updating lachesis from $LACHESIS_VERSION to $NEW_LACHESIS_VERSION"
   # Install Lachesis
